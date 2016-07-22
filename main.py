@@ -15,6 +15,8 @@ parser.add_argument('-f', dest='f', action='store',
                     help='Mask for input files', required=True)
 parser.add_argument('-o', dest='o', action='store', default=".",
                     help='Output folder')
+parser.add_argument('-d', dest='d', action='store_true',
+                    help='Delete original file')
 parser.add_argument('-s', dest='s', action='store', required=True,
                     help='Size for resizing, format WхH. Where W and H may be a number (for hard resize), '+\
                     'float number for percentage resize or "p" for the proportional resize')
@@ -87,7 +89,9 @@ for i, f in enumerate(input_files):
         print(r)
         end_size[1] = round(end_size[0]*r)
 
-    im.resize(end_size).save(output + new_name.format(on=on, ext=ext, n=i))
+    im.resize(end_size, Image.BICUBIC).save(output + new_name.format(on=on, ext=ext, n=i))
+    if args.d:
+        os.remove(f)
 
         
 
