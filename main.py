@@ -20,10 +20,10 @@ parser.add_argument('-s', dest='s', action='store', required=True,
                     'float number for procentage resize or "p" for the proportional resize')
 parser.add_argument('-n', dest='n', action='store', default="{on}.{ext}",
                     help='New name for files. Can contain formating. For example, "image{n}.png"\n'+\
-                    "You can use:"+\
-                    "n -- number" +\
-                    "ext -- extension" +\
-                    "on -- old name of file" +\
+                    "You can use:, "+\
+                    "n -- number, " +\
+                    "ext -- extension, " +\
+                    "on -- old name of file, " +\
                     "and other str.format() features" )
 
 #parser.add_argument('-', dest='', action='store',

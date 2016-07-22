@@ -13,8 +13,8 @@ optional arguments:
               (for hard resize), float number for procentage resize or "p" for
               the proportional resize
   -n N        New name for files. Can contain formating. For example,
-              "image{n}.png" You can use:n -- numberext -- extensionon -- old
-              name of fileand other str.format() features
+              "image{n}.png" You can use:, n -- number, ext -- extension, on
+              -- old name of file, and other str.format() features
 ```
 ## Some examples
 ```
