@@ -10,7 +10,7 @@ optional arguments:
   -f F        Mask for input files
   -o O        Output folder
   -s S        Size for resizing, format WхH. Where W and H may be a number
-              (for hard resize), float number for procentage resize or "p" for
+              (for hard resize), float number for percentage resize or "p" for
               the proportional resize
   -n N        New name for files. Can contain formating. For example,
               "image{n}.png" You can use:, n -- number, ext -- extension, on

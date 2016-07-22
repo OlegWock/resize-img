@@ -17,7 +17,7 @@ parser.add_argument('-o', dest='o', action='store', default=".",
                     help='Output folder')
 parser.add_argument('-s', dest='s', action='store', required=True,
                     help='Size for resizing, format WхH. Where W and H may be a number (for hard resize), '+\
-                    'float number for procentage resize or "p" for the proportional resize')
+                    'float number for percentage resize or "p" for the proportional resize')
 parser.add_argument('-n', dest='n', action='store', default="{on}.{ext}",
                     help='New name for files. Can contain formating. For example, "image{n}.png"\n'+\
                     "You can use:, "+\
